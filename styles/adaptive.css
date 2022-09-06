@@ -1,0 +1,45 @@
+@media screen and (max-width: 576px) {
+  .section {
+    padding: 1rem 2rem;
+  }
+
+  pre {
+    display: none;
+  }
+
+  .portfolio__wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .achievements-block {
+    flex-wrap: wrap;
+  }
+
+  .achievements-block__item {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+
+  .portfolio,
+  .portfolio__wrapper {
+    justify-content: center;
+  }
+
+  .portfolio__sidebar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1500px){
+  .portfolio {
+    justify-content: space-between;
+  }
+
+  .achievements-block {
+    justify-content: flex-start;
+  }
+}

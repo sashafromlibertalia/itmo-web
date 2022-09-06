@@ -12,43 +12,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/globals.css">
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/adaptive.css">
   <title>Главная страница | Портфолио Александра Мирошниченко</title>
 </head>
 
 <body>
-  <nav class="navigation">
-    <a href="#" class="navigation__item">Главная</a>
-    <a href="/another-page.html" class="navigation__item">Другая страница моего портфолио</a>
-  </nav>
-  <main>
-    <section class="section">
-      <article>
-        <h2 class="section__header">Биография</h2>
-        <p>Да́рья Серге́евна Шиха́нова (<ins>род. 30 ноября 1999, Саратов</ins>), более известная под псевдонимом
-          <del>Лучшая женщина в мире</del><strong>Дора</strong>, — российская певица, исполняющая подростковый поп-рок.
-          Дарья родом из
-          <em>Саратова</em>. В детстве она увлекалась поп-музыкой, вначале слушая русских исполнителей, которых
-          транслировали по радио, но позже заинтересовавшись и зарубежными артистами.
-        </p>
-        <pre>
-        888                        
-        888                        
-        888                        
-    .d88888 .d88b. 888d888 8888b.  
-   d88" 888d88""88b888P"      "88b 
-   888  888888  888888    .d888888 
-   Y88b 888Y88..88P888    888  888 
-    "Y88888 "Y88P" 888    "Y888888 
-                                   
-                                   
-                                     
+<nav class="navigation">
+  <a href="#" class="navigation__item">Главная</a>
+  <a href="./another-page.html" class="navigation__item">Другая страница моего портфолио</a>
+</nav>
+<main>
+  <section class="section">
+    <article>
+      <h2 class="section__header">Биография</h2>
+      <p>Да́рья Серге́евна Шиха́нова (
+        <ins>род. 30 ноября 1999, Саратов</ins>
+        ), более известная под псевдонимом
+        <del>Лучшая женщина в мире</del>
+        <strong>Дора</strong>, — российская певица, исполняющая подростковый поп-рок.
+        Дарья родом из
+        <em>Саратова</em>. В детстве она увлекалась поп-музыкой, вначале слушая русских исполнителей, которых
+        транслировали по радио, но позже заинтересовавшись и зарубежными артистами.
+      </p>
+      <pre>
+        888
+        888
+        888
+    .d88888 .d88b. 888d888 8888b.
+   d88" 888d88""88b888P"      "88b
+   888  888888  888888    .d888888
+   Y88b 888Y88..88P888    888  888
+    "Y88888 "Y88P" 888    "Y888888
+
+
+
       </pre>
-      <img class="bio__img" src="https://histrf.ru/images/articles/13/Bvtt4j9frDyrjQVDCRij6Ezm4d6l3XFWFNFm48MI.jpg" alt="дора)" width="400">
-      </article>
-    </section>
-    <section class="section">
-      <h2 class="section__header">Мои достижения и не только</h2>
-      <div>
+      <img class="bio__img" src="https://histrf.ru/images/articles/13/Bvtt4j9frDyrjQVDCRij6Ezm4d6l3XFWFNFm48MI.jpg"
+           alt="дора)" width="400">
+    </article>
+  </section>
+  <section class="section">
+    <h2 class="section__header">Мои достижения и не только</h2>
+    <div class="achievements-block">
         <span class="achievements-block__item">
           <h4 class="achievements-block__header">Мои неуспехи</h4>
           <ol class="achievements-block__list">
@@ -66,7 +71,7 @@
             </li>
           </ol>
         </span>
-        <span class="achievements-block__item">
+      <span class="achievements-block__item">
           <h4 class="achievements-block__header">Мои успехи</h4>
           <ol class="achievements-block__list">
             <li>
@@ -80,7 +85,7 @@
             </li>
           </ol>
         </span>
-        <span class="achievements-block__item">
+      <span class="achievements-block__item">
           <h4 class="achievements-block__header">Мои стремления</h4>
           <ol class="achievements-block__list">
             <li>
@@ -88,63 +93,76 @@
             </li>
           </ol>
         </span>
-      </div>
-    </section>
-    <section class="section">
-      <h2 class="section__header">Мое портфолио</h2>
-      <div>
-              <div class="portfolio">
+    </div>
+  </section>
+  <section class="section">
+    <h2 class="section__header">Мое портфолио</h2>
+    <div class="portfolio__wrapper">
+      <div class="portfolio">
         <div class="portfolio__item">
-          <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/fe/James_P_Sullivan.jpg/280px-James_P_Sullivan.jpg" alt="картинка какая-то" />
-          <div>
-            <h6>Пример заголовка элемента портфолио</h6>
-            <span>Пример описания и <del>или</del> ссылки на него</span>
+          <img
+              src="https://i.pinimg.com/originals/5e/59/70/5e5970225b4e2d6c6b9dfcdcfbf45abe.jpg"
+              alt="картинка какая-то"/>
+          <div class="portfolio__item_container">
+            <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
+            <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
           </div>
         </div>
         <div class="portfolio__item">
-          <img src="https://static.wikia.nocookie.net/disney/images/3/3c/Profile_-_Sulley.jpg/revision/latest?cb=20211018112141&path-prefix=ru" alt="картинка какая-то" />
-          <div>
-            <h6>Пример заголовка элемента портфолио</h6>
-            <span>Пример описания и <del>или</del> ссылки на него</span>
+          <img
+              src="https://img.classistatic.de/api/v1/mo-prod/images/ef/eff10ac9-670d-4ab0-90c5-77f2923437d8?rule=mo-640.jpg"
+              alt="картинка какая-то"/>
+          <div class="portfolio__item_container">
+            <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
+            <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
           </div>
         </div>
         <div class="portfolio__item">
-          <img src="http://pics.wikireality.ru/upload/thumb/8/87/Dora.jpg/300px-Dora.jpg" alt="картинка какая-то" />
-          <div>
-            <h6>Пример заголовка элемента портфолио</h6>
-            <span>Пример описания и <del>или</del> ссылки на него</span>
+          <img src="https://carsweek.ru/upload/iblock/cdf/cdf7ea9856c513a0ce3440df88789ddc.jpg" alt="картинка какая-то"/>
+          <div class="portfolio__item_container">
+            <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
+            <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
           </div>
         </div>
       </div>
-      <aside class="portfolio__sidebar">Портфолио скромное, зато сделано с любовью.</aside>
-      </div>
+      <aside class="portfolio__sidebar">
+        Портфолио скромное, зато сделано с любовью.
+        <div class="portfolio__sidebar_grid">
+          <div>Я не знаю</div>
+          <div>Что засунуть</div>
+          <div>В вертикальную сетку</div>
+        </div>
+      </aside>
+    </div>
 
-    </section>
-    <section class="section">
-      <h2 class="section__header">ух со смыслом</h2>
-      <p>
-        <q>Отныне время будет течь по прямой<br />
-          Шаг вверх, шаг вбок - их мир за спиной<br />
-          Я сжёг их жизнь, как ворох газет<br />
-          Остался только грязный асфальт<br />
-          Но рок-н-ролл мёртв, а я ещё нет<br />
-          Рок-н-ролл мёртв, а я...<br />
-          Те, что нас любят, смотрят нам вслед<br />
-          Рок-н-ролл мёртв, а я...<br />
-          Ещё нет</q>
-        <sub>БГ, 1988 г.</sub>
-      </p>
-    </section>
-  </main>
-  <footer class="footer">
-    <ul class="footer__list">
-      <li>
-        <a href="https://instagram.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">Мой инстаграм*</a>
-      </li>
-      <li>
-        <a href="https://github.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">Мой гитхаб</a>
-      </li>
-    </ul>
-  </footer>
+  </section>
+  <section class="section">
+    <h2 class="section__header quote__header">ух со смыслом</h2>
+    <p class="quote__paragraph">
+      <q>Отныне время будет течь по прямой<br/>
+        Шаг вверх, шаг вбок - их мир за спиной<br/>
+        Я сжёг их жизнь, как ворох газет<br/>
+        Остался только грязный асфальт<br/>
+        Но рок-н-ролл мёртв, а я ещё нет<br/>
+        Рок-н-ролл мёртв, а я...<br/>
+        Те, что нас любят, смотрят нам вслед<br/>
+        Рок-н-ролл мёртв, а я...<br/>
+        Ещё нет</q>
+      <sub>БГ, 1988 г.</sub>
+    </p>
+  </section>
+</main>
+<footer class="footer">
+  <ul class="footer__list">
+    <li>
+      <a href="https://instagram.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">Мой
+        инстаграм*</a>
+    </li>
+    <li>
+      <a href="https://github.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">Мой
+        гитхаб</a>
+    </li>
+  </ul>
+</footer>
 </body>
 </html>
