@@ -48,6 +48,28 @@
   list-style-type: persian;
 }
 
+.portfolio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.portfolio__sidebar {
+  float: right;
+  padding: 1rem;
+}
+
+.portfolio__item {
+  box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+  border-radius: .2rem;
+}
+
+.portfolio__item img {
+  aspect-ratio: 4 / 3;
+  height: 5rem;
+}
+
 .footer {
   padding: 2rem 4rem;
   background-color: rgb(15, 15, 19);
