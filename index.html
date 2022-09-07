@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Страничка Александра Мирошниченко по вебу)">
   <meta name="author" content="Александр Мирошниченко">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <title>Главная страница | Портфолио Александра Мирошниченко</title>
 </head>
 
 <body>
-  <nav>
-    <a href="#" target="_self">Главная</a>
-    <a href="/another-page.html">Другая страница моего портфолио</a>
+  <nav class="navigation">
+    <a href="#" class="navigation__item">Главная</a>
+    <a href="/another-page.html" class="navigation__item">Другая страница моего портфолио</a>
   </nav>
   <main>
-    <section>
+    <section class="section">
       <article>
-        <h2>Биография</h2>
+        <h2 class="section__header">Биография</h2>
         <p>Да́рья Серге́евна Шиха́нова (<ins>род. 30 ноября 1999, Саратов</ins>), более известная под псевдонимом
-          <del>Лучшая женщина в мире</del><strong>Дора</strong>, — российская певица, исполняющая подростковый поп-рок. Дарья родом из
+          <del>Лучшая женщина в мире</del><strong>Дора</strong>, — российская певица, исполняющая подростковый поп-рок.
+          Дарья родом из
           <em>Саратова</em>. В детстве она увлекалась поп-музыкой, вначале слушая русских исполнителей, которых
           транслировали по радио, но позже заинтересовавшись и зарубежными артистами.
         </p>
@@ -36,14 +43,15 @@
                                    
                                      
       </pre>
+      <img class="bio__img" src="https://histrf.ru/images/articles/13/Bvtt4j9frDyrjQVDCRij6Ezm4d6l3XFWFNFm48MI.jpg" alt="дора)" width="400">
       </article>
     </section>
-    <section>
-      <h2>Мои достижения и не только</h2>
+    <section class="section">
+      <h2 class="section__header">Мои достижения и не только</h2>
       <div>
-        <span>
-          <h4>Мои неуспехи</h4>
-          <ol>
+        <span class="achievements-block__item">
+          <h4 class="achievements-block__header">Мои неуспехи</h4>
+          <ol class="achievements-block__list">
             <li>
               Из-за сжатых сроков я выкатил сырой сайт для университета ИТМО
             </li>
@@ -58,9 +66,9 @@
             </li>
           </ol>
         </span>
-        <span>
-          <h4>Мои успехи</h4>
-          <ol>
+        <span class="achievements-block__item">
+          <h4 class="achievements-block__header">Мои успехи</h4>
+          <ol class="achievements-block__list">
             <li>
               Я нашел работу в 19 лет
             </li>
@@ -72,9 +80,9 @@
             </li>
           </ol>
         </span>
-        <span>
-          <h4>Мои стремления</h4>
-          <ol>
+        <span class="achievements-block__item">
+          <h4 class="achievements-block__header">Мои стремления</h4>
+          <ol class="achievements-block__list">
             <li>
               Сдать <strong><del>б</del>веб</strong> на пятерочку..
             </li>
@@ -82,11 +90,11 @@
         </span>
       </div>
     </section>
-    <section>
-      <h2>Мое портфолио</h2>
+    <section class="section">
+      <h2 class="section__header">Мое портфолио</h2>
       <div>
         <div>
-          <img src="" alt="картинка какая-то"/>
+          <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/fe/James_P_Sullivan.jpg/280px-James_P_Sullivan.jpg" alt="картинка какая-то" />
           <div>
             <h6>Пример заголовка элемента портфолио</h6>
             <span>Пример описания и <del>или</del> ссылки на него</span>
@@ -95,8 +103,8 @@
       </div>
       <aside>Портфолио скромное, зато сделано с любовью.</aside>
     </section>
-    <section>
-      <h2>ух со смыслом</h2>
+    <section class="section">
+      <h2 class="section__header">ух со смыслом</h2>
       <p>
         <q>Отныне время будет течь по прямой<br />
           Шаг вверх, шаг вбок - их мир за спиной<br />
@@ -111,16 +119,15 @@
       </p>
     </section>
   </main>
-  <footer>
-    <ul>
+  <footer class="footer">
+    <ul class="footer__list">
       <li>
-        <a href="https://instagram.com/sashafromlibertalia" target="_blank" rel="noopener">Мой инстаграм*</a>
+        <a href="https://instagram.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">Мой инстаграм*</a>
       </li>
       <li>
-        <a href="https://github.com/sashafromlibertalia" target="_blank" rel="noopener">Мой гитхаб</a>
+        <a href="https://github.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">Мой гитхаб</a>
       </li>
     </ul>
   </footer>
 </body>
-
 </html>
