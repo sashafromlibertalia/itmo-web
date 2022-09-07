@@ -32,6 +32,16 @@
   .portfolio__sidebar {
     display: none;
   }
+
+  .table__header tr,
+  .table__body tr {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .table__body tr td:first-child,
+  .table__header tr td:first-child {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1500px){

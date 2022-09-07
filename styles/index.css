@@ -129,6 +129,55 @@ main {
   text-align: center;
 }
 
+.table {
+  display: grid;
+}
+
+.table > * {
+  text-align: center;
+}
+
+.table__header tr {
+  background: #6d9bec;
+}
+
+.table__body tr td:first-child {
+  background: #2b2d31;
+  color: white;
+}
+
+.table__body tr td:nth-child(even) {
+  background: #d6f5ff;
+}
+
+.table__header tr,
+.table__body tr {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 1fr);
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+td {
+  padding: 1rem;
+  text-align: center;
+}
+
+.table__cells {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.table__cells span {
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.table__cells span:nth-child(2n + 1) {
+  background: #d6f5ff;
+}
+
 .footer {
   padding: 2rem 4rem;
   background-color: rgb(15, 15, 19);
