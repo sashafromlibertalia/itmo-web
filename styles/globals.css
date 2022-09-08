@@ -10,6 +10,7 @@
 
 html,
 body {
+  min-height: 100vh;
   height: 100%;
   font-family: 'Raleway', sans-serif;
 }
@@ -78,4 +79,9 @@ span {
 q {
   text-align: center;
   font-style: italic;
+}
+
+
+footer {
+  color: white;
 }
