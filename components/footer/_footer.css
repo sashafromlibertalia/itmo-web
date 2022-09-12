@@ -1,0 +1,15 @@
+.footer {
+  padding: 2rem 4rem;
+  background-color: rgb(15, 15, 19);
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer__link {
+  color: white;
+}

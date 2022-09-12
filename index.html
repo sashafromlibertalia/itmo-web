@@ -11,18 +11,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/_variables.css">
   <link rel="stylesheet" href="styles/globals.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/_components.css">
   <link rel="stylesheet" href="styles/adaptive.css">
   <script src="js/index.js"></script>
   <title>Главная страница | Портфолио Александра Мирошниченко</title>
 </head>
 
 <body>
-<nav class="navigation">
-  <a data-link="main" href="index.html" class="navigation__item">Главная</a>
-  <a data-link="feedback" href="feedback.html" class="navigation__item">Отзывы о моей работе</a>
-</nav>
+<script type="module" src="components/navbar/index.js"></script>
+<script type="module" src="components/footer/index.js"></script>
+<nav-bar></nav-bar>
 <main>
   <section class="section">
     <article>
@@ -36,19 +37,6 @@
         <em>Саратова</em>. В детстве она увлекалась поп-музыкой, вначале слушая русских исполнителей, которых
         транслировали по радио, но позже заинтересовавшись и зарубежными артистами.
       </p>
-      <pre>
-        888
-        888
-        888
-    .d88888 .d88b. 888d888 8888b.
-   d88" 888d88""88b888P"      "88b
-   888  888888  888888    .d888888
-   Y88b 888Y88..88P888    888  888
-    "Y88888 "Y88P" 888    "Y888888
-
-
-
-      </pre>
       <img class="bio__img" src="https://histrf.ru/images/articles/13/Bvtt4j9frDyrjQVDCRij6Ezm4d6l3XFWFNFm48MI.jpg"
            alt="дора)" width="400">
     </article>
@@ -191,20 +179,6 @@
     </table>
   </section>
 </main>
-<footer class="footer">
-  <ul class="footer__list">
-    <li>
-      <a href="https://instagram.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">
-        Мой инстаграм*
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">
-        Мой гитхаб
-      </a>
-    </li>
-  </ul>
-  <p id="timestamp"></p>
-</footer>
+<custom-footer></custom-footer>
 </body>
 </html>

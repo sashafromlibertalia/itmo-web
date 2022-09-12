@@ -1,18 +1,19 @@
 const paths = Object.freeze({
   MAIN: {
-    file: 'index.html',
+    file: 'itmo-web/index.html',
     link: 'main'
   },
   FEEDBACK: {
-    file: 'feedback.html',
+    file: 'itmo-web/feedback.html',
     link: 'feedback'
   },
 });
 
 (() => {
+  const startTime = new Date().getTime();
+
   document.addEventListener('DOMContentLoaded', () => {
-    const stampParagraph = document.querySelector('footer');
-    const startTime = new Date().getTime();
+    const stampParagraph = document.querySelector('#timestamp');
 
     window.addEventListener('load', () => {
       stampParagraph.innerHTML += `Время загрузки - ${(new Date().getTime() - startTime) / 1000} с`;
