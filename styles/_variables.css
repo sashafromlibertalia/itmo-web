@@ -1,5 +1,7 @@
 :root {
-  --color-primary: #f00;
-  --color-secondary: #0f0;
-  --color-tertiary: #00f;
+  --color-brand: #7692FF;
+  --color-primary: #3C3C3C;
+  --color-ui-background: #F5F5F5;
+
+  --mixin-transition: all .25s cubic-bezier(.33, 1, .68, 1);;
 }

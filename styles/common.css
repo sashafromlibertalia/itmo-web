@@ -1,3 +1,12 @@
 main {
   padding-top: 4rem;
 }
+
+.section {
+  padding: 2rem 4rem;
+}
+
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}

@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   height: 100%;
   font-family: 'Raleway', sans-serif;
+  background: var(--color-ui-background);
 }
 
 body {
@@ -22,12 +23,12 @@ body {
 
 a {
   text-decoration: underline;
-  color: black;
-  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms color;
+  color: var(--color-primary);
+  transition: var(--mixin-transition)
 }
 
 a:hover {
-  color: #6207ff;
+  color: var(--color-brand);
 }
 
 ol,
@@ -69,6 +70,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  color: var(--color-primary);
 }
 
 p,

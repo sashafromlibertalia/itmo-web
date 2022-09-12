@@ -1,6 +1,6 @@
 .footer {
   padding: 2rem 4rem;
-  background-color: rgb(15, 15, 19);
+  background-color: var(--color-primary);
 }
 
 .footer__list {
@@ -12,4 +12,8 @@
 
 .footer__link {
   color: white;
+}
+
+#timestamp {
+  color: var(--color-ui-background)
 }
