@@ -36,32 +36,14 @@
 .portfolio {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  flex: 0 0 70%;
-}
-
-.portfolio__wrapper {
-  display: flex;
   justify-content: space-between;
-}
-
-.portfolio__sidebar {
-  float: right;
-  padding: 1rem;
-  background: #efefef;
-}
-
-.portfolio__sidebar_grid {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
 }
 
 .portfolio__item {
   box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
   border-radius: .5rem;
   cursor: pointer;
+  flex: 0 0 30%;
   transition: var(--mixin-transition);
   will-change: auto;
 }
