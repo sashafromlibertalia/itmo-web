@@ -22,17 +22,20 @@
 <main>
   <section class="section">
     <h2 class="section__header">Создание расписания</h2>
-    <form class="schedule__form">
+    <form class="schedule__form" id="schedule-form">
       <label>
-        <input placeholder="Напишите, что вы собираетесь сделать" type="text" class="schedule__input"/>
+        <input placeholder="Напишите, что вы собираетесь сделать" name="text" type="text" class="schedule__input"/>
+        <select name="day" class="schedule__select">
+          <option value="Понедельник" selected>Понедельник</option>
+          <option value="Вторник">Вторник</option>
+          <option value="Среда">Среда</option>
+          <option value="Четверг">Четверг</option>
+          <option value="Пятница">Пятница</option>
+        </select>
       </label>
+      <button type="submit" class="schedule__button">Сохранить форму</button>
     </form>
-    <div class="schedule__list">
-      <div class="schedule__item">
-        <h5 class="schedule__item_header">Купиasdasdasasdasdasdsdasdasть пиво</h5>
-        <p>Понедельник</p>
-      </div>
-    </div>
+    <div class="schedule__list" id="schedule-list"></div>
   </section>
 </main>
 <custom-footer></custom-footer>
