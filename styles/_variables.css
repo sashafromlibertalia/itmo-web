@@ -1,7 +1,8 @@
 :root {
-  --color-brand: #7692FF;
-  --color-primary: #3C3C3C;
-  --color-ui-background: #F5F5F5;
+  --color-brand: rgb(61, 143, 255);
+  --color-brand-transparent: rgba(61, 143, 255, 0.5);
+  --color-primary: #0f0f12;
+  --color-ui-background: rgb(252, 252, 252);
 
   --mixin-transition: all .25s cubic-bezier(.33, 1, .68, 1);;
 }

@@ -16,19 +16,19 @@
 }
 
 .navigation__item {
-  padding: .5rem 1rem;
-  border-radius: .5rem;
-  text-decoration: none;
-}
-
-.navigation__item:hover {
-  color: var(--color-brand);
+  padding: .2rem .25rem;
+  font-weight: 500;
+  color: var(--color-primary);
 }
 
 .navigation__item_active {
-  color: var(--color-ui-background);
-  background: var(--color-brand);
   font-weight: bold;
+  color: var(--color-ui-background);
+}
+
+.navigation__item_active:before {
+  background: var(--color-brand);
+  transform: none;
 }
 
 .navigation__item_active:hover {

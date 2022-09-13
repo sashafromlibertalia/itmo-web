@@ -1,5 +1,9 @@
 .footer {
   padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--color-primary);
 }
 
@@ -15,5 +19,6 @@
 }
 
 #timestamp {
-  color: var(--color-ui-background)
+  color: var(--color-ui-background);
+  margin-top: 2rem;
 }

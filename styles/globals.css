@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,600&display=swap');
+
 *,
 *::before,
 *::after {
@@ -22,13 +24,33 @@ body {
 }
 
 a {
-  text-decoration: underline;
   color: var(--color-primary);
-  transition: var(--mixin-transition)
+  position: relative;
+  transition: var(--mixin-transition);
+  border-radius: 0.3em;
+  display: inline-block;
+  text-decoration: none;
+  will-change: transform;
 }
 
-a:hover {
-  color: var(--color-brand);
+a:before {
+  background: var(--color-brand-transparent);
+  border-radius: 0.3em;
+  bottom: 0;
+  content: "";
+  left: -0.25rem;
+  position: absolute;
+  right: -0.25rem;
+  top: 0;
+  padding: .5rem;
+  transform: scaleY(.06);
+  transform-origin: 0 100% 0;
+  transition: var(--mixin-transition);
+  z-index: -1;
+}
+
+a:hover:before {
+  transform: none;
 }
 
 ol,
@@ -86,4 +108,11 @@ q {
 
 footer {
   color: white;
+}
+
+mark {
+  padding: .2rem;
+  background: rgba(17, 48, 179, 0.13);
+  font-weight: 500;
+  color: var(--color-primary);
 }
