@@ -1,0 +1,10 @@
+:root {
+  --color-brand: rgb(61, 143, 255);
+  --color-brand-transparent: rgba(61, 143, 255, 0.5);
+  --color-primary: #0f0f12;
+
+  --color-ui-background: rgb(252, 252, 252);
+  --color-ui-secondary: rgb(236, 236, 236);
+
+  --mixin-transition: all .25s cubic-bezier(.33, 1, .68, 1);;
+}

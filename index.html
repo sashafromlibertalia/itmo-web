@@ -7,50 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Страничка Александра Мирошниченко по вебу)">
   <meta name="author" content="Александр Мирошниченко">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/_variables.css">
   <link rel="stylesheet" href="styles/globals.css">
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/pages/index.css">
+  <link rel="stylesheet" href="styles/_components.css">
   <link rel="stylesheet" href="styles/adaptive.css">
   <script src="js/index.js"></script>
   <title>Главная страница | Портфолио Александра Мирошниченко</title>
 </head>
 
 <body>
-<nav class="navigation">
-  <a data-link="main" href="index.html" class="navigation__item">Главная</a>
-  <a data-link="feedback" href="feedback.html" class="navigation__item">Отзывы о моей работе</a>
-</nav>
+<script type="module" src="components/navbar/index.js"></script>
+<script type="module" src="components/footer/index.js"></script>
+<nav-bar></nav-bar>
 <main>
   <section class="section">
     <article>
       <h2 class="section__header">Биография</h2>
-      <p>Да́рья Серге́евна Шиха́нова (
-        <ins>род. 30 ноября 1999, Саратов</ins>
-        ), более известная под псевдонимом
-        <del>Лучшая женщина в мире</del>
-        <strong>Дора</strong>, — российская певица, исполняющая подростковый поп-рок.
-        Дарья родом из
-        <em>Саратова</em>. В детстве она увлекалась поп-музыкой, вначале слушая русских исполнителей, которых
-        транслировали по радио, но позже заинтересовавшись и зарубежными артистами.
-      </p>
-      <pre>
-        888
-        888
-        888
-    .d88888 .d88b. 888d888 8888b.
-   d88" 888d88""88b888P"      "88b
-   888  888888  888888    .d888888
-   Y88b 888Y88..88P888    888  888
-    "Y88888 "Y88P" 888    "Y888888
-
-
-
-      </pre>
-      <img class="bio__img" src="https://histrf.ru/images/articles/13/Bvtt4j9frDyrjQVDCRij6Ezm4d6l3XFWFNFm48MI.jpg"
-           alt="дора)" width="400">
+      <div>
+        <img class="bio__img" src="me.jpeg"
+             alt="дора)" height="200">
+        Родился под Петербургом, в 2020 году окончил школу. В школе я основал небольшую <a href="https://vk.com/kvartalka">рок-группу</a>,
+        с которой мы выпустили один альбом и отыграли несколько концертов в настоящих питерских клубах!
+        <br/>
+        Параллельно с этим я изучал <mark>веб-программирование</mark>. Я изучил основы <i>HTML</i>, <i>CSS</i> и <i>JavaScript</i>.
+        <br/>
+        В том же 2020 году я поступил в университет ИТМО и влюбился в местную атмосферу! Я узнал о <mark>KySect</mark>,
+        а затем вместе с Искандером основал веб-секту, которая <s>умерла</s> живет полной жизнью!
+        <br/>
+        <q>
+          Каждый день я играю блюз на Squier Stratocaster, именуемый мною как <b>Blues power</b>
+        </q>
+      </div>
     </article>
   </section>
   <section class="section">
@@ -99,45 +88,34 @@
   </section>
   <section class="section">
     <h2 class="section__header">Мое портфолио</h2>
-    <div class="portfolio__wrapper">
-      <div class="portfolio">
-        <div class="portfolio__item">
-          <img
-              src="https://i.pinimg.com/originals/5e/59/70/5e5970225b4e2d6c6b9dfcdcfbf45abe.jpg"
-              alt="картинка какая-то"/>
-          <div class="portfolio__item_container">
-            <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
-            <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
-          </div>
-        </div>
-        <div class="portfolio__item">
-          <img
-              src="https://img.classistatic.de/api/v1/mo-prod/images/ef/eff10ac9-670d-4ab0-90c5-77f2923437d8?rule=mo-640.jpg"
-              alt="картинка какая-то"/>
-          <div class="portfolio__item_container">
-            <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
-            <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
-          </div>
-        </div>
-        <div class="portfolio__item">
-          <img src="https://carsweek.ru/upload/iblock/cdf/cdf7ea9856c513a0ce3440df88789ddc.jpg"
-               alt="картинка какая-то"/>
-          <div class="portfolio__item_container">
-            <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
-            <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
-          </div>
+    <div class="portfolio">
+      <div class="portfolio__item">
+        <img
+            src="https://i.pinimg.com/originals/5e/59/70/5e5970225b4e2d6c6b9dfcdcfbf45abe.jpg"
+            alt="картинка какая-то"/>
+        <div class="portfolio__item_container">
+          <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
+          <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
         </div>
       </div>
-      <aside class="portfolio__sidebar">
-        Портфолио скромное, зато сделано с любовью.
-        <div class="portfolio__sidebar_grid">
-          <div>Я не знаю</div>
-          <div>Что засунуть</div>
-          <div>В вертикальную сетку</div>
+      <div class="portfolio__item">
+        <img
+            src="https://img.classistatic.de/api/v1/mo-prod/images/ef/eff10ac9-670d-4ab0-90c5-77f2923437d8?rule=mo-640.jpg"
+            alt="картинка какая-то"/>
+        <div class="portfolio__item_container">
+          <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
+          <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
         </div>
-      </aside>
+      </div>
+      <div class="portfolio__item">
+        <img src="https://carsweek.ru/upload/iblock/cdf/cdf7ea9856c513a0ce3440df88789ddc.jpg"
+             alt="картинка какая-то"/>
+        <div class="portfolio__item_container">
+          <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
+          <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
+        </div>
+      </div>
     </div>
-
   </section>
   <section class="section">
     <h2 class="section__header quote__header">ух со смыслом</h2>
@@ -154,57 +132,7 @@
       <sub>БГ, 1988 г.</sub>
     </p>
   </section>
-  <section class="section">
-    <table class="table">
-      <thead class="table__header">
-      <tr>
-        <td>&nbsp;</td>
-        <td>Col 1</td>
-        <td>Col 2</td>
-        <td>Col 3</td>
-        <td>Col 4</td>
-      </tr>
-      </thead>
-      <tbody class="table__body">
-      <tr>
-        <td>Хочу</td>
-        <td>Дору</td>
-        <td>В</td>
-        <td>Корпорацию</td>
-        <td>ИТМО</td>
-      </tr>
-      <tr>
-        <td>Хочу</td>
-        <td>Дору</td>
-        <td>В</td>
-        <td>Корпорацию</td>
-        <td>ИТМО</td>
-      </tr>
-      <tr>
-        <td>Хочу</td>
-        <td>Дору</td>
-        <td>В</td>
-        <td>Корпорацию</td>
-        <td>ИТМО</td>
-      </tr>
-      </tbody>
-    </table>
-  </section>
 </main>
-<footer class="footer">
-  <ul class="footer__list">
-    <li>
-      <a href="https://instagram.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">
-        Мой инстаграм*
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/sashafromlibertalia" target="_blank" rel="noopener" class="footer__link">
-        Мой гитхаб
-      </a>
-    </li>
-  </ul>
-  <p id="timestamp"></p>
-</footer>
+<custom-footer></custom-footer>
 </body>
 </html>

@@ -6,31 +6,19 @@
   pre {
     display: none;
   }
-
-  .portfolio__wrapper {
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 2rem;
-  }
 }
 
 @media screen and (max-width: 992px){
-  .achievements-block {
+  .achievements-block,
+  .portfolio {
     flex-wrap: wrap;
+    gap: 2rem;
   }
 
-  .achievements-block__item {
+  .achievements-block__item,
+  .portfolio__item {
     flex: 0 0 100%;
     margin: 0;
-  }
-
-  .portfolio,
-  .portfolio__wrapper {
-    justify-content: center;
-  }
-
-  .portfolio__sidebar {
-    display: none;
   }
 
   .table__header tr,
@@ -41,15 +29,5 @@
   .table__body tr td:first-child,
   .table__header tr td:first-child {
     display: none;
-  }
-}
-
-@media screen and (min-width: 1500px){
-  .portfolio {
-    justify-content: space-between;
-  }
-
-  .achievements-block {
-    justify-content: flex-start;
   }
 }

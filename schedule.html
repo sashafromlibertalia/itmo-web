@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Страничка Александра Мирошниченко по вебу)">
+  <meta name="author" content="Александр Мирошниченко">
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/_variables.css">
+  <link rel="stylesheet" href="styles/globals.css">
+  <link rel="stylesheet" href="styles/pages/schedule.css">
+  <link rel="stylesheet" href="styles/_components.css">
+  <link rel="stylesheet" href="styles/adaptive.css">
+  <script src="js/index.js"></script>
+  <title>Расписание</title>
+</head>
+<body>
+<script type="module" src="components/navbar/index.js"></script>
+<script type="module" src="components/footer/index.js"></script>
+<nav-bar></nav-bar>
+<main>
+  <section class="section">
+    <h2 class="section__header">Создание расписания</h2>
+    <form class="schedule__form" id="schedule-form">
+      <label>
+        <input maxlength="20" placeholder="Напишите, что вы собираетесь сделать" name="text" type="text" class="schedule__input"/>
+        <select name="day" class="schedule__select">
+          <option value="Понедельник" selected>Понедельник</option>
+          <option value="Вторник">Вторник</option>
+          <option value="Среда">Среда</option>
+          <option value="Четверг">Четверг</option>
+          <option value="Пятница">Пятница</option>
+        </select>
+      </label>
+      <button type="submit" class="schedule__button">Сохранить форму</button>
+    </form>
+    <div class="schedule__list" id="schedule-list"></div>
+  </section>
+</main>
+<custom-footer></custom-footer>
+<script type="text/javascript" src="js/schedule.js"></script>
+</body>
+</html>

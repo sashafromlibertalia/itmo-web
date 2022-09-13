@@ -1,31 +1,22 @@
-.section {
-  padding: 2rem 4rem;
-}
-
-.section__header {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
 .bio__img {
   box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
   border-radius: .5rem;
-  border: 10px solid rgb(233, 30, 145);
+  float: right;
+  margin-left: 2rem;
 }
 
 .achievements-block {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 2rem;
 }
 
 .achievements-block__item {
-  margin: 2rem 0;
   display: block;
-  background: linear-gradient(90deg, rgba(104, 162, 228, 1) 0%, rgba(101, 108, 182, 1) 26%, rgba(59, 121, 226, 1) 57%, rgba(0, 212, 255, 1) 100%);
+  flex: 0 0 30%;
   border-radius: .5rem;
   padding: 1rem 2rem;
+  border: 2px solid var(--color-primary);
 }
 
 .achievements-block__header {
@@ -37,41 +28,22 @@
 }
 
 .achievements-block__list {
-  list-style-type: persian;
-  color: white;
-  text-align: right;
+  list-style-type: decimal;
+  color: var(--color-primary);
 }
 
 .portfolio {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  flex: 0 0 70%;
-}
-
-.portfolio__wrapper {
-  display: flex;
   justify-content: space-between;
-}
-
-.portfolio__sidebar {
-  float: right;
-  padding: 1rem;
-  background: #efefef;
-}
-
-.portfolio__sidebar_grid {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
 }
 
 .portfolio__item {
   box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
   border-radius: .5rem;
   cursor: pointer;
-  transition: 200ms ease-in-out background-color;
+  flex: 0 0 30%;
+  transition: var(--mixin-transition);
   will-change: auto;
 }
 

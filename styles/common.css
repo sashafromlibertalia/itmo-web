@@ -1,44 +1,14 @@
 main {
-  padding-top: 4rem;
+  max-width: 1490px;
+  padding: 4rem 2rem 0;
+  margin: 0 auto;
 }
 
-.navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  gap: 2rem;
-  background-color: #f5f5f5;
-  padding: 0;
-  margin: 0;
-  height: 4rem;
-  z-index: 2;
+.section {
+  padding: 2rem 0;
 }
 
-.navigation__item {
-  padding: 1rem;
-}
-
-.navigation__item_active {
-  color: #6d9bec;
-  background: bisque;
-}
-
-.footer {
-  padding: 2rem 4rem;
-  background-color: rgb(15, 15, 19);
-}
-
-.footer__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-}
-
-.footer__link {
-  color: white;
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }

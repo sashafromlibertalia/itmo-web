@@ -1,0 +1,24 @@
+.footer {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primary);
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer__link {
+  color: white;
+}
+
+#timestamp {
+  color: var(--color-ui-background);
+  margin-top: 2rem;
+}

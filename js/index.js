@@ -1,18 +1,23 @@
 const paths = Object.freeze({
   MAIN: {
-    file: 'index.html',
+    file: 'itmo-web/index.html',
     link: 'main'
   },
   FEEDBACK: {
-    file: 'feedback.html',
+    file: 'itmo-web/feedback.html',
     link: 'feedback'
   },
+  SCHEDULE: {
+    file: 'itmo-web/schedule.html',
+    link: 'schedule'
+  }
 });
 
 (() => {
+  const startTime = new Date().getTime();
+
   document.addEventListener('DOMContentLoaded', () => {
-    const stampParagraph = document.querySelector('footer');
-    const startTime = new Date().getTime();
+    const stampParagraph = document.querySelector('#timestamp');
 
     window.addEventListener('load', () => {
       stampParagraph.innerHTML += `Время загрузки - ${(new Date().getTime() - startTime) / 1000} с`;
@@ -26,6 +31,8 @@ const paths = Object.freeze({
       case document.location.pathname.includes(paths.FEEDBACK.file):
         [...navigationLinks].find(link => link.dataset.link === paths.FEEDBACK.link).classList.add('navigation__item_active');
         break;
+      case document.location.pathname.includes(paths.SCHEDULE.file):
+        [...navigationLinks].find(link => link.dataset.link === paths.SCHEDULE.link).classList.add('navigation__item_active');
     }
   })
 })();

@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  gap: 2rem;
+  background-color: var(--color-ui-background);
+  padding: 0;
+  margin: 0;
+  height: 4rem;
+  z-index: 2;
+  box-shadow: -1px 26px 48px -21px rgba(42, 45, 47, 0.16);
+}
+
+.navigation__item {
+  padding: .2rem .25rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.navigation__item_active {
+  font-weight: bold;
+  color: var(--color-ui-background);
+}
+
+.navigation__item_active:before {
+  background: var(--color-brand);
+  transform: none;
+}
+
+.navigation__item_active:hover {
+  color: var(--color-ui-background);
+}
