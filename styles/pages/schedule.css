@@ -1,0 +1,31 @@
+.schedule__form {
+  margin: 0 auto;
+}
+
+.schedule__input {
+  padding: .5rem;
+  background: var(--color-ui-secondary);
+  border-radius: .5rem;
+  width: 25rem;
+  font-weight: 500;
+}
+
+.schedule__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.schedule__item {
+  cursor: pointer;
+  padding: .5rem 1rem;
+  border-radius: .8rem;
+  max-width: 15rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.schedule__item_header {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}

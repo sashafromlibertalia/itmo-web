@@ -22,54 +22,17 @@
 <main>
   <section class="section">
     <h2 class="section__header">Создание расписания</h2>
-    <form>
-<div class="form__group">
-        <label for="group">Группа</label>
-        <select name="group" id="group">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-      </div>
-      <div class="form__group">
-        <label for="day">День недели</label>
-        <select name="day" id="day">
-          <option value="1">Понедельник</option>
-          <option value="2">Вторник</option>
-          <option value="3">Среда</option>
-          <option value="4">Четверг</option>
-          <option value="5">Пятница</option>
-          <option value="6">Суббота</option>
-        </select>
-      </div>
-      <div class="form__group">
-        <label for="lesson">Урок</label>
-        <select name="lesson" id="lesson">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-        </select>
-      </div>
-      <div class="form__group">
-        <label for="subject">Предмет</label>
-        <select name="subject" id="subject">
-          <option value="1">Математика</option>
-          <option value="2">Русский язык</option>
-          <option value="3">Физика</option>
-          <option value="4">Информатика</option>
-          <option value="5">История</option>
-          <option value="6">Биология</option>
-          <option value="7">География</option>
-          <option value="8">Литература</option>
-          <option value="9">Английский язык</option>
-        </select>
-      </div>
+    <form class="schedule__form">
+      <label>
+        <input placeholder="Напишите, что вы собираетесь сделать" type="text" class="schedule__input"/>
+      </label>
     </form>
+    <div class="schedule__list">
+      <div class="schedule__item">
+        <h5 class="schedule__item_header">Купиasdasdasasdasdasdsdasdasть пиво</h5>
+        <p>Понедельник</p>
+      </div>
+    </div>
   </section>
 </main>
 <custom-footer></custom-footer>
