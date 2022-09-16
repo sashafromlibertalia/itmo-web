@@ -10,9 +10,10 @@ const feedbackList = document.querySelector('.feedback__list');
 const paginationButtons = document.getElementsByClassName('pagination__item');
 
 const renderComments = async () => {
+  feedbackList.innerHTML = '<skeleton-list></skeleton-list>';
+
   try {
     const data = await fetchComments(localStorage.getItem('page'));
-    feedbackList.innerHTML = '<skeleton-list></skeleton-list>';
 
     [...paginationButtons].forEach(button => {
       if (button.innerText === localStorage.getItem('page'))
