@@ -35,6 +35,13 @@
     width: 100%;
     margin: 0;
   }
+
+  .feedback__item_container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 992px){
