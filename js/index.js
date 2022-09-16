@@ -25,13 +25,13 @@ const paths = Object.freeze({
 
     const navigationLinks = document.querySelectorAll('.navigation__item');
     switch (true) {
-      case document.location.pathname.includes(paths.MAIN.file):
+      case document.location.pathname.endsWith(paths.MAIN.file) || document.location.pathname.endsWith('/'):
         [...navigationLinks].find(link => link.dataset.link === paths.MAIN.link).classList.add('navigation__item_active');
         break;
-      case document.location.pathname.includes(paths.FEEDBACK.file):
+      case document.location.pathname.endsWith(paths.FEEDBACK.file):
         [...navigationLinks].find(link => link.dataset.link === paths.FEEDBACK.link).classList.add('navigation__item_active');
         break;
-      case document.location.pathname.includes(paths.SCHEDULE.file):
+      case document.location.pathname.endsWith(paths.SCHEDULE.file):
         [...navigationLinks].find(link => link.dataset.link === paths.SCHEDULE.link).classList.add('navigation__item_active');
     }
   })
