@@ -46,6 +46,10 @@
   .portfolio__item {
     margin: 0 .4rem;
   }
+
+  .portfolio__item_header {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 992px){
