@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="styles/pages/index.css">
   <link rel="stylesheet" href="styles/components.css">
   <link rel="stylesheet" href="styles/adaptive.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/slick.css">
   <script src="js/index.js"></script>
   <title>Главная страница | Портфолио Александра Мирошниченко</title>
 </head>
@@ -26,7 +29,7 @@
     <article>
       <h2 class="section__header">Биография</h2>
       <div>
-        <img class="bio__img" src="me.jpeg"
+        <img class="bio__img" src="public/img/me.jpeg"
              alt="дора)" height="200">
         Родился под Петербургом, в 2020 году окончил школу. В школе я основал небольшую <a href="https://vk.com/kvartalka">рок-группу</a>,
         с которой мы выпустили один альбом и отыграли несколько концертов в настоящих питерских клубах!
@@ -90,29 +93,42 @@
     <h2 class="section__header">Мое портфолио</h2>
     <div class="portfolio">
       <div class="portfolio__item">
-        <img
-            src="https://i.pinimg.com/originals/5e/59/70/5e5970225b4e2d6c6b9dfcdcfbf45abe.jpg"
-            alt="картинка какая-то"/>
+        <img src="public/img/block.png" alt="картинка какая-то"/>
         <div class="portfolio__item_container">
-          <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
-          <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
+          <h6 class="portfolio__item_header">3D модель магазина "БЛОК18"</h6>
+          <span class="portfolio__item_description">
+            Одним летним вечером, я решил сделать 3D модель для магазина своих приятелей - <a href="https://vk.com/blok18store" target="_blank">БЛОК18</a>.
+            Работа им очень понравилась, и они повесили ее у себя в шапке профиля!
+          </span>
         </div>
       </div>
       <div class="portfolio__item">
-        <img
-            src="https://img.classistatic.de/api/v1/mo-prod/images/ef/eff10ac9-670d-4ab0-90c5-77f2923437d8?rule=mo-640.jpg"
-            alt="картинка какая-то"/>
+        <img src="public/img/itmo.jpg" alt="картинка какая-то"/>
         <div class="portfolio__item_container">
-          <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
-          <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
+          <h6 class="portfolio__item_header">3D модель университета-корпорации ИТМО</h6>
+          <span class="portfolio__item_description">
+            Продолжая эксперименты с 3D моделированиям, я поставил себе весьма амбициозную задачу - смоделировать собственный университет.
+            Работа вышла непростой, много навыков я приобрел. Самое приятное - ИТМО заметил эту работу и оставил коммент под моим <a href="https://www.instagram.com/p/CRgcNWwrUZy/" target="_blank">постом!</a>
+          </span>
         </div>
       </div>
       <div class="portfolio__item">
-        <img src="https://carsweek.ru/upload/iblock/cdf/cdf7ea9856c513a0ce3440df88789ddc.jpg"
-             alt="картинка какая-то"/>
+        <img src="public/img/fender.png" alt="картинка какая-то"/>
         <div class="portfolio__item_container">
-          <h6 class="portfolio__item_header">Пример заголовка элемента портфолио</h6>
-          <span class="portfolio__item_description">Пример описания и <del>или</del> ссылки на него</span>
+          <h6 class="portfolio__item_header">Макет мобильного приложения для музыкальной компании Fender</h6>
+          <span class="portfolio__item_description">
+            Типичная работа для Dribbble, ничего сверхвыдающегося. Из приятного - <a href="https://dribbble.com/shots/10972628-Fender-App" target="_blank">пост</a> с этой работой собрал много лайков и просмотров!
+          </span>
+        </div>
+      </div>
+      <div class="portfolio__item">
+        <img src="public/img/metro.png" alt="картинка какая-то"/>
+        <div class="portfolio__item_container">
+          <h6 class="portfolio__item_header">Редизайн схемы метро Петербурга</h6>
+          <span class="portfolio__item_description">
+            В 10 классе я, полный наглости и самоуверенности, насмотревшись разных умных и не очень людей, решил действовать дерзко и делать
+            амбициозные проекты. Одним из них стало метро. Работа отвратительная, многих фишек Figma я тогда не знал, но зато попробовал
+          </span>
         </div>
       </div>
     </div>
@@ -134,5 +150,9 @@
   </section>
 </main>
 <custom-footer></custom-footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
 </body>
 </html>

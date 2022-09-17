@@ -42,17 +42,19 @@
     gap: 0;
     margin-bottom: 1rem;
   }
+
+  .portfolio__item {
+    margin: 0 .4rem;
+  }
 }
 
 @media screen and (max-width: 992px){
-  .achievements-block,
-  .portfolio {
+  .achievements-block {
     flex-wrap: wrap;
     gap: 2rem;
   }
 
-  .achievements-block__item,
-  .portfolio__item {
+  .achievements-block__item {
     flex: 0 0 100%;
     margin: 0;
   }
